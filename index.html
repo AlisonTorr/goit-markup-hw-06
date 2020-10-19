@@ -85,16 +85,20 @@
                                 </div>
 
                                 <label for="user-comment" class="input-name">Комментарий</label>
-                                <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Введите текст" class="user-comment"></textarea>
+                                <textarea name="user-comment" id="user-comment" placeholder="Введите текст" class="user-comment"></textarea>
                                 
-                                <div class="agreement">
+                                <label class="agreement">
                                     <input type="checkbox" value="agreement" name="agreement" class="agreement-checkbox" checked>
+                                    <svg width="16" height="15" class="checkbox-icon">
+                                        <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                                    </svg>
                                     <p class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-terms-doc">Условия договора</a></p>
-                                </div>
+                                </label>
 
+                                <button type="submit" class="submit-button">Отправить</button>
                             </form>
 
-                            <button type="submit" class="submit-button">Отправить</button>
+                            
                         </div>    
                     </div>
                 </div>
