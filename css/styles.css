@@ -372,18 +372,37 @@ a:focus {
 }
 
 .agreement {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     font-size: 14px;
 }
 
+.checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    border: 2px solid black;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
 .agreement-checkbox {
+    position: absolute;
+    appearance: none;
     margin-right: 8px;
+}
+
+.agreement-checkbox:checked + .checkbox-icon {
+    background-color: var(--accent-color);
 }
 
 .agreement-text {
     line-height: 1.714;
+    margin-left: 23px;
 }
 
 .agreement-terms-doc {
