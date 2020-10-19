@@ -305,6 +305,10 @@ a:focus {
     background-color: var(--primary-background-color);
     cursor: pointer;
 }
+.close-btn:hover,
+.close-btn:focus > .close-btn-icon{
+    fill: var(--accent-color);
+}
 
 .data-appeal {
     display: inline-block;
@@ -323,18 +327,35 @@ a:focus {
     color: var(--secondary-text-color);
 }
 
+.form-field {
+    position: relative;
+}
+
 .contact-form-input {
     display: block;
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
-    padding: 12px 16px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     letter-spacing: 0.01em;
 }
-.contact-form-input:focus {
+.contact-form-input:focus,
+.contact-form-input:hover {
     outline: none;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.contact-form-input:hover + .input-form-icon {
+    fill: var(--accent-color);
+}
+.form-field:focus-within > .input-form-icon {
+    fill: var(--accent-color);
 }
 
 .input-name {
@@ -342,6 +363,12 @@ a:focus {
     text-align: initial;
     margin-bottom: 4px;
     color: var(--secondary-text-color);
+}
+
+.input-form-icon {
+    position: absolute;
+    left: 12px;
+    top: 32px;
 }
 
 .agreement {
@@ -375,6 +402,7 @@ a:focus {
 }
 .user-comment:focus {
     outline: none;
+    border: 1px solid var(--accent-color);
 }
 
 .submit-button {
@@ -709,11 +737,15 @@ section {
 .social-link-list-item-footer:hover {
     background-color: var(--accent-color);
 }
-.social-link-item-footer:focus {
-    outline: black;
+.social-link-list-item-footer:focus-within {
+    background-color: var(--accent-color);
 }
 .social-link-list-item-footer:not(:last-child) {
     margin-right: 10px;
+}
+
+.social-link-item-footer:focus {
+    outline: black;
 }
 
 .social-link-item-footer {
@@ -721,9 +753,7 @@ section {
     justify-content: center;
     align-items: center;
 }
-.social-link-item-footer:focus {
-    background-color: var(--accent-color);
-}
+
 .social-link-item-footer:focus {
     outline: 1px solid black;
 }
