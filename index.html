@@ -46,7 +46,7 @@
             <section class="hero-section"> 
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button type="button" data-modal-open class="modal-btn type=button">Заказать услугу</button>
+                    <button type="button" data-modal-open class="modal-btn" type="button">Заказать услугу</button>
                     
                     <div data-modal class="backdrop is-hidden">
                         <div class="modal">
@@ -89,9 +89,7 @@
                                 
                                 <label class="agreement">
                                     <input type="checkbox" value="agreement" name="agreement" class="agreement-checkbox" checked>
-                                    <svg width="16" height="15" class="checkbox-icon">
-                                        <use href="./images/symbol-defs.svg#icon-checkbox"></use>
-                                    </svg>
+                                    <span class="checkbox-icon"></span>
                                     <p class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-terms-doc">Условия договора</a></p>
                                 </label>
 
@@ -394,7 +392,8 @@
                         </ul>
                     </address>
                     </div>
-                    <div class="footer-container-right">
+
+                    <div class="footer-container-center">
                         <h3 class="footer-connect">присоединяйтесь</h3>
                         <ul class="social-links-list">
                             <li class="social-link-list-item-footer">
@@ -426,6 +425,22 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="footer-container-right">
+                        <h3 class="footer-connect">Подпишитесь на рассылку</h3>
+                        <form action="#" method="GET" autocomplete="off" class="subscription-form-footer">
+                            <label>
+                                <input type="email" placeholder="E-mail" class="subscription-input">
+                            </label>
+
+                            <button type="submit" class="subscribe-button-footer">
+                                Подписаться
+                                <svg width="24" height="24" class="subscribe-icon-footer">
+                                    <use href="./images/symbol-defs.svg#icon-send-plane"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
