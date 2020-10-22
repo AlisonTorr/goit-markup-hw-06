@@ -712,6 +712,7 @@ section {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
