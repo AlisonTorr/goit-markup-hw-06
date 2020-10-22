@@ -87,12 +87,10 @@
                                 <label for="user-comment" class="input-name">Комментарий</label>
                                 <textarea name="user-comment" id="user-comment" placeholder="Введите текст" class="user-comment"></textarea>
                                 
-                                <label class="agreement">
-                                    <input type="checkbox" value="agreement" name="agreement" class="agreement-checkbox" checked>
-                                    <span class="checkbox-icon"></span>
-                                    <p class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-terms-doc">Условия договора</a></p>
-                                </label>
-
+                                
+                                <input type="checkbox" id="agreement-checkbox" value="agreement" name="agreement" class="agreement-checkbox" checked>
+                                <label for="agreement-checkbox" class="agreement-label">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-terms-doc">Условия договора</a></label>
+                                
                                 <button type="submit" class="submit-button">Отправить</button>
                             </form>
 
@@ -431,7 +429,7 @@
                         <h3 class="footer-connect">Подпишитесь на рассылку</h3>
                         <form action="#" method="GET" autocomplete="off" class="subscription-form-footer">
                             <label>
-                                <input type="email" placeholder="E-mail" class="subscription-input">
+                                <input type="email" name="user-email-footer" placeholder="E-mail" class="subscription-input">
                             </label>
 
                             <button type="submit" class="subscribe-button-footer">
