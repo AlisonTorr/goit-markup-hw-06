@@ -281,6 +281,7 @@ a:focus {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
+    z-index: 999;
 
     width: 528px;
     min-height: 580px;
@@ -418,7 +419,7 @@ a:focus {
 }
 
 .agreement-checkbox:checked + .agreement-label::before {
-    background-image: url(../images/symbol-defs.svg#icon-check);
+    background-image: url(../images/icon\ check.svg);
     background-size: contain;
     background-origin: border-box;
     background-color: var(--accent-color);
@@ -525,6 +526,7 @@ section {
 .features-item {
     position: relative;
     display: block;
+    z-index: 1;
 }
 
 .features-item:not(:last-child) {
