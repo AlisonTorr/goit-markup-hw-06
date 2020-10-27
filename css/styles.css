@@ -419,7 +419,7 @@ a:focus {
 }
 
 .agreement-checkbox:checked + .agreement-label::before {
-    background-image: url(../images/icon\ check.svg);
+    background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
     background-color: var(--accent-color);
