@@ -1,0 +1,105 @@
+.google-maps {
+  color: $white-text-color;
+}
+
+.footer {
+  width: inherit;
+  color: rgba(255, 255, 255, 0.6);
+  background: $secondary-background-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+
+    &__logo {
+      display: block;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &-left {
+      margin-right: 70px;
+    }
+
+    &-center {
+      margin-right: 92px;
+    }
+
+    & .footer-contacts {
+      color: rgba(255, 255, 255, 0.6);
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-connect {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.143;
+  text-transform: uppercase;
+  color: $white-text-color;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscription-form-footer {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-input {
+  display: inline-block;
+  width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-button-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 10px 28px;
+  background: $accent-color;
+  border-radius: 4px;
+  border: none;
+  color: $white-text-color;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+.subscribe-icon-footer {
+  margin-left: 10px;
+}
